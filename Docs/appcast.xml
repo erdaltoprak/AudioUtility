@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>AudioUtility</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 19 Mar 2026 22:56:01 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.1</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/erdaltoprak/AudioUtility/releases/download/v1.0.0/AudioUtility.zip" length="5257639" type="application/octet-stream" sparkle:edSignature="UZ198puelR9cZklzk38E6xmQieP1IZ80nUeRGUJyN+qHN3H5oNkbHwN69CLmUCfCi3N+0tXOSdz+GKvB4vWBAQ=="/>
+        </item>
+    </channel>
+</rss>
