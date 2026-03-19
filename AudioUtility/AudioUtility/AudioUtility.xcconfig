@@ -1,0 +1,42 @@
+//
+//  AudioUtility.xcconfig
+//  AudioUtility
+//
+//  Created by Erdal Toprak on 08/12/2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+// Instructions to link this .xcconfig file to the Xcode project:
+
+// In DevUtility / Info tab:
+// For Debug and Release select the .xcconfig file you just created
+
+// Do these exact steps in Xcode; you never touch project.pbxproj by hand.
+// In the navigator, click the blue AudioUtility project icon.
+// In the center, make sure the Build Settings tab is selected and the Levels view is active.
+// In the left sidebar, first click the TARGETS ▸ AudioUtility row (not the Project row).
+// In the search/filter box on the right, type Development Team so you only see that one setting under Signing.
+// In the AudioUtility column for Debug and Release:
+// Click the current value (your team name).
+// Replace with $(DEVELOPMENT_TEAM)
+// Press Return after each.
+// DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)"; instead of the hard‑coded ID, and the real ID lives only in AudioUtility.xcconfig.
+
+// Select TARGETS ▸ AudioUtility → Build Settings → Levels.
+// In the search field, type Product Bundle Identifier.
+// In the AudioUtility column (Debug and Release), replace the hard‑coded value with one of these, then press Return:
+// If you want a reusable prefix like the IceCubes project:
+// In .xcconfig: BUNDLE_ID_PREFIX = com.erdaltoprak
+// In Build Settings: $(BUNDLE_ID_PREFIX).AudioUtility
+// If you want the full bundle ID to live entirely in .xcconfig:
+// In .xcconfig: PRODUCT_BUNDLE_IDENTIFIER = com.erdaltoprak.AudioUtility
+// In Build Settings: $(PRODUCT_BUNDLE_IDENTIFIER)
+// After you change it in Build Settings, project.pbxproj will show PRODUCT_BUNDLE_IDENTIFIER = "$(…)"; instead of the literal string.
+
+DEVELOPMENT_TEAM = A2NYRQCGYA
+PRODUCT_BUNDLE_IDENTIFIER = me.erdal.audioutility
+SLASH = / // Otherwise a double slash is treated as a comment, even inside a quoted string
+SPARKLE_FEED_URL = https:$(SLASH)$(SLASH)erdaltoprak.github.io/AudioUtility/appcast.xml
+SPARKLE_PUBLIC_ED_KEY = EMmwBFJGUN16l9/7r2TnrdV7+nHDpXE6F0VeRj18wfo=
